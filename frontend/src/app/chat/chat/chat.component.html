@@ -1,0 +1,18 @@
+<div class="chat-container">
+  <div class="chat-header">
+    <h2>Чат</h2>
+    <button (click)="closeChat()" class="logout-button">Выход</button>
+  </div>
+  
+  <div class="chat-messages">
+    <div *ngFor="let message of messagesArray" class="message">
+      <div class="message-username">{{ message.name }}</div>
+      <div class="message-text">{{ message.text }}</div>
+    </div>
+  </div>
+  
+  <div class="chat-input-container">
+    <input [(ngModel)]="newMessage" type="text" placeholder="Введите сообщение..." class="chat-input" />
+    <button (click)="sendMessage()" class="send-button">Отправить</button>
+  </div>
+</div>

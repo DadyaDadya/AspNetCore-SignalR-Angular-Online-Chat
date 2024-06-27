@@ -1,0 +1,79 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh; /* Уменьшение высоты до 90vh */
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff; /* Белый цвет для заголовка */
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+}
+
+.logout-button {
+  background-color: #ff4d4d; /* Красная кнопка выхода */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #ffffff; /* Белый фон для сообщений */
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e5e5e5; /* Светло-серый цвет для сообщений */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word; /* Разбивка длинных слов */
+}
+
+.message-username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.message-text {
+  white-space: pre-wrap; /* Сохранение пробелов и перенос текста */
+}
+
+.chat-input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #fff; /* Белый цвет для нижней части */
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 10px 10px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: #007bff; /* Синий цвет для кнопки отправки */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
